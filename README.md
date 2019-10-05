@@ -1,7 +1,7 @@
 # Spot
 Repository for my Spot Mini projects.
 
-###Installation
+##Installation
 
 To make spotmini-ros part of your workspace, follow these steps (assuming your workspace is setup following the standard conventions):
 ```
