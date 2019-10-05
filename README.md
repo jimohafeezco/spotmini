@@ -10,3 +10,5 @@ git clone hhttps://github.com/jimohafeezco/spotmini.git
 cd ~/catkin_ws
 catkin_make
 ```
+[alt text](https://github.com/jimohafeezco/spotmini/blob/master/Screenshot%20from%202019-10-05%2019-31-24.png)
+
