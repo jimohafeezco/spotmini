@@ -17,7 +17,7 @@
 
 
   <link name="base_link">
-    <visual>
+    <visual>  
       <geometry>
         <box size="0.3 0.1 0.02"/>
         <origin xyz = "0 0 1.50"/>
@@ -25,6 +25,17 @@
       <material name="blue"/>
 
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.3 0.1 0.02"/>
+        </geometry>
+      </collision>
   </link>
 
   <link name="shoulder_link_front">
@@ -34,6 +45,19 @@
       </geometry>
       <origin rpy="1.57075 0 0" xyz="0 -0.0175 0"/>
     </visual>
+  
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+    
   </link>
   <joint name="shoulder_joint_front" type="fixed">
     <axis xyz="1 0 0"/> 
@@ -51,6 +75,19 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.0225"/>
     </visual>
+
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="elbow_joint_front" type="revolute">
     <axis xyz="0 1 0"/>
@@ -68,6 +105,19 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.025"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
+
   </link>
   <joint name="wrist_joint_front" type="revolute">
     <axis xyz="0 1 0"/>
@@ -86,6 +136,18 @@
       </geometry>
       <origin rpy="1.57075 0 0" xyz="0 -0.0175 0"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="shoulder_joint_front1" type="fixed">
     <axis xyz="1 0 0"/> 
@@ -103,6 +165,19 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.0225"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
+
   </link>
   <joint name="elbow_joint_front1" type="revolute">
     <axis xyz="0 1 0"/>
@@ -120,6 +195,18 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.025"/>
     </visual>
+         <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="wrist_joint_front1" type="revolute">
     <axis xyz="0 1 0"/>
@@ -152,6 +239,18 @@
       </geometry>
       <origin rpy="1.57075 0 0" xyz="0 -0.0175 0"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="shoulder_joint_back" type="fixed">
     <axis xyz="1 0 0"/>
@@ -169,6 +268,18 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.0225"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="elbow_joint_back" type="revolute">
     <axis xyz="0 1 0"/>
@@ -186,6 +297,18 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.025"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="wrist_joint_back" type="revolute">
     <axis xyz="0 1 0"/>
@@ -203,6 +326,18 @@
       </geometry>
       <origin rpy="1.57075 0 0" xyz="0 -0.0175 0"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="shoulder_joint_back1" type="fixed">
     <axis xyz="1 0 0"/>
@@ -221,6 +356,18 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.0225"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="elbow_joint_back1" type="revolute">
     <axis xyz="0 1 0"/>
@@ -238,6 +385,18 @@
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.025"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
   <joint name="wrist_joint_back1" type="revolute">
     <axis xyz="0 1 0"/>
@@ -256,6 +415,18 @@
       </geometry>
       <origin xyz="0 0 0.01" rpy="0 0 0"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
 
   <joint name="body1_joint" type="prismatic">
@@ -277,6 +448,18 @@
       </geometry>
       <origin xyz="0 0 0.025" rpy="0 0 0"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
 
    <joint name="body3_joint" type="revolute">
@@ -292,6 +475,18 @@
       </geometry>
       <origin xyz="0 0 0.05" rpy="0 0 0"/>
     </visual>
+       <inertial>
+         <origin xyz="0 0 0.5" rpy="0 0 0"/>
+         <mass value="1"/>
+         <inertia ixx="100"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+       </inertial>
+     <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.035" radius="0.005"/>
+        </geometry>
+      </collision>
+
   </link>
 
 
