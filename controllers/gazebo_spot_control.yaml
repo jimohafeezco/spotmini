@@ -1,15 +1,15 @@
 spot:
   # Publish all joint states -----------------------------------
-  joint1_state_controller:
+  joint_state_controller:
     type: joint_state_controller/JointStateController
     publish_rate: 50  
 
   # Position Controllers ---------------------------------------
-  joint2_position_controller:
+  joint_position_controller1:
     type: effort_controllers/JointPositionController
-    joint: wrist_joint_front
+    joint: elbow_joint_front1
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  joint3_position_controller:
+  joint_position_controller2:
     type: effort_controllers/JointPositionController
     joint: wrist_joint_front
     pid: {p: 100.0, i: 0.01, d: 10.0}
