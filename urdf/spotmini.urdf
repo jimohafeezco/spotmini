@@ -475,9 +475,9 @@
 
 
 
-   <transmission name="tran1">
+   <!-- <transmission name="tran1">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="wrist_joint_front">
+    <joint name="elbow_joint_front1">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="motor1">
@@ -501,7 +501,7 @@
   <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
     <robotNamespace>/spot</robotNamespace>
   </plugin>
-</gazebo>
+</gazebo> -->
 
 
 </robot>
