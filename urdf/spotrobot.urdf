@@ -298,10 +298,9 @@
 
   </link>
 
-  <joint name="body1_joint" type="prismatic">
+  <joint name="body1_joint" type="fixed">
     <parent link="base_link"/>
     <child  link="body1_link"/>
-    <limit lower="-0.03" upper="0.0" effort="0" velocity="0"/>
     <origin xyz = "0.125 0 0.01"/>
   </joint>
  
