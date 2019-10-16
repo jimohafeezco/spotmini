@@ -129,22 +129,6 @@
     <origin xyz="0 0 -0.045"/>
   </joint>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <link name="shoulder_link_back">
     <visual>
       <geometry>
