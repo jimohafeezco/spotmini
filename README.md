@@ -26,6 +26,10 @@ Click below to view the pictorial representation of the robot.
 
 
 
+## Controller for Robot
 
+
+
+## Publisher Node for Robot
 
 P.S: This work would continually be improved upon and the whole of the robot would move , detect obstacles and change direction of motion.
