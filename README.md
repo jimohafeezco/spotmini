@@ -20,15 +20,16 @@ After running the commands above, you can play with the the joint states variabl
 
 
 Click below to view the pictorial representation of the robot.
+
+## Pictorial View of Robot in RVIZ
 ![alt text](/media/robot_image.png)
-![alt text](/media/robot_move.gif)
 
 
 
 
 ## Controller for Robot
-
-
+### Animation for Robot in Gazebo
+![alt text](/media/robot_move.gif)
 
 ## Publisher Node for Robot
 
