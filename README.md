@@ -28,7 +28,7 @@ Click below to view the pictorial representation of the robot.
 
 
 ## Controller for Robot
-### Animation for Robot in Gazebo
+### Animation for Control Action on Robot in Gazebo
 ![alt text](/media/robot_move.gif)
 
 ## Publisher Node for Robot
