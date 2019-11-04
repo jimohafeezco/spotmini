@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">	</include>
+    <arg name="x" default="0" />
+    <arg name="y" default="0" />
+    <arg name="z" default="0.5" />
+        <arg name="model" default="$(find spotmini)/urdf/spotmini.urdf" />
+        <param name="robot_description" command="cat $(find spotmini)/urdf/spotmini.urdf" />
+
+	<node name="spawn_robot" pkg="gazebo_ros" type="spawn_model"
+		args="-urdf -model spotmini -param robot_description -x $(arg x) -y $(arg y) -z $(arg z)">
+	</node>
+
+	<rosparam command = "load" file= "$(find spotmini)/controllers/gazebo_spot_control.yaml"/>
+	
+	  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+   	   output="screen" ns="/spot" args="joint1_position_controller joint2_position_controller joint_state_controller"/>
+
+</launch>
