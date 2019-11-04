@@ -11,7 +11,7 @@
 	</node>
 	    
 	<node name="control_spot" pkg="spotmini" type="control_spot.py" />
-	<node name="image_listener" pkg="spotmini" type="takePhoto.py" />
+	<!-- <node name="image_listener" pkg="spotmini" type="takePhoto.py" /> -->
 
 	<rosparam command = "load" file= "$(find spotmini)/controllers/gazebo_spot_control.yaml"/>
 	
