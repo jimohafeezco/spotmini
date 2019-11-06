@@ -19,7 +19,6 @@ After running the commands above, you can play with the the joint states variabl
 
 
 
-Click below to view the pictorial representation of the robot.
 
 ## Pictorial View of Robot in RVIZ
 ![alt text](/media/image.png)
@@ -28,9 +27,16 @@ Click below to view the pictorial representation of the robot.
 
 
 ## Controller for Robot
+
+A control yaml file was written which specify the various PID value for each joints in the robot. This keeps the robor stable in the simulation world.
+
+## Publisher Node for Robot
+In other to move the robot, a python script was written to publish joint positions to the controller. This is made possible by publishing to the topic of the joints which is ```/spot/joint10_position_controller/command in this case```. A node name is specified in the python script which is refernced in the launch file so that the robot and the publisher can talk to oe another. 
+
 ### Animation for Control Action on Robot in Gazebo
 ![alt text](/media/robot_move.gif)
 
-## Publisher Node for Robot
+
+
 
 P.S: This work would continually be improved upon and the whole of the robot would move , detect obstacles and change direction of motion.
