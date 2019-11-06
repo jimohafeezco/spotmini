@@ -20,12 +20,17 @@ After running the commands above, you can play with the the joint states variabl
 
 
 Click below to view the pictorial representation of the robot.
-![alt text](https://github.com/jimohafeezco/spotmini/blob/master/Screenshot%20from%202019-10-05%2019-31-24.png
+
+## Pictorial View of Robot in RVIZ
+![alt text](/media/robot_image.png)
+
+
+
+
+## Controller for Robot
+### Animation for Control Action on Robot in Gazebo
 ![alt text](/media/robot_move.gif)
 
-
-
-
-
+## Publisher Node for Robot
 
 P.S: This work would continually be improved upon and the whole of the robot would move , detect obstacles and change direction of motion.
