@@ -37,6 +37,12 @@ In other to move the robot, a python script was written to publish joint positio
 ![alt text](/media/robot_move.gif)
 
 
+### Sensing
 
+Two sensors namely the IMU sensor cand the Camera sensor have been included in the Gazebo model. This sensors subscribes to the robot joint topic and read information from it.
+
+To get Camera Images,run: 
+"rosrun image_view image_saver image:=/camera1/image_raw" on the terminal and Images of the camera would be saved automatically in the Gazebo model workspace.
+A python script, ```takePhoto.py``` was written as a subscriber node to save the image automatically and the publisher node included in the Gazebo model launch file.
 
 P.S: This work would continually be improved upon and the whole of the robot would move , detect obstacles and change direction of motion.
