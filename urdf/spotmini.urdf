@@ -20,14 +20,14 @@
     <visual>
       <geometry>
         <box size="0.3 0.1 0.02"/>
-        <origin xyz = "0 0 0.01"/>
+        <origin xyz = "0 0 0.01" rpy =" 0 0 1.0"/>
       </geometry>
       <material name="blue"/>
 
     </visual>
 
     <inertial>
-         <origin xyz="0 0 0.01" rpy="0 0 0"/>
+         <origin xyz="0 0 0.01" rpy="0 0 1.0"/>
          <mass value="1"/>
          <inertia ixx="0.11"  ixy="0"  ixz="0.0" iyy= "0.04" iyz="0" izz="0.02" />
        </inertial>
@@ -282,7 +282,7 @@
    
   <joint name="wrist_joint_back1" type="revolute">
     <axis xyz="0 1 0"/>
-    <limit effort="10.0"   velocity="1.0"/>
+    <limit effort="10.0" lower="-0.39" upper="0.39" velocity="1.0"/>
     <parent link="thigh_link_back1"/>
     <child link="shank_link_back1"/>
     <origin xyz="0 0 -0.045"/>
