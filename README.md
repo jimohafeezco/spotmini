@@ -19,11 +19,30 @@ After running the commands above, you can play with the the joint states variabl
 
 
 
-Click below to view the pictorial representation of the robot.
-![alt text](https://github.com/jimohafeezco/spotmini/blob/master/Screenshot%20from%202019-10-05%2019-31-24.png)
+
+## Pictorial View of Robot in RVIZ
+![alt text](/media/image.png)
 
 
 
 
+## Controller for Robot
+
+A control yaml file was written which specify the various PID value for each joints in the robot. This keeps the robor stable in the simulation world.
+
+## Publisher Node for Robot
+In other to move the robot, a python script was written to publish joint positions to the controller. This is made possible by publishing to the topic of the joints which is ```/spot/joint10_position_controller/command in this case```. A node name is specified in the python script which is refernced in the launch file so that the robot and the publisher can talk to oe another. 
+
+### Animation for Control Action on Robot in Gazebo
+![alt text](/media/robot_move.gif)
+
+
+### Sensing
+
+Two sensors namely the IMU sensor cand the Camera sensor have been included in the Gazebo model. This sensors subscribes to the robot joint topic and read information from it.
+
+To get Camera Images,run: 
+"rosrun image_view image_saver image:=/camera1/image_raw" on the terminal and Images of the camera would be saved automatically in the Gazebo model workspace.
+A python script, ```takePhoto.py``` was written as a subscriber node to save the image automatically and the publisher node included in the Gazebo model launch file.
 
 P.S: This work would continually be improved upon and the whole of the robot would move , detect obstacles and change direction of motion.
