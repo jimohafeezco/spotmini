@@ -10,6 +10,8 @@ def talker():
     pub1 = rospy.Publisher('/spot/joint10_position_controller/command', Float64, queue_size=10)
     pub2 = rospy.Publisher('/spot/joint4_position_controller/command', Float64, queue_size=10)
     pub3 = rospy.Publisher('/spot/joint12_position_controller/command', Float64, queue_size=10)
+    pub4 = rospy.Publisher('/spot/joint6_position_controller/command', Float64, queue_size=10)
+
     rospy.init_node('control_spot')
 
     rate = rospy.Rate(10) # 10hz
@@ -22,6 +24,7 @@ def talker():
         pub1.publish(position)
         pub2.publish(math.cos(i))
         pub3.publish(math.cos(i))
+        pub4.publish(math.cos(i))
         i+= 0.1
         rate.sleep()
 
