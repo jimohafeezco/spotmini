@@ -23,8 +23,16 @@ After running the commands above, you can play with the the joint states variabl
 ## Pictorial View of Robot in RVIZ
 ![alt text](/media/image.png)
 
+## Launching in Gazebo
 
+First be in the catkin workspace root, 
 
+```
+i)    catkin_make
+ii)   source devel/setup.bash
+iii)  roslaunch spotmini display_gazebo.launch 
+
+```
 
 ## Controller for Robot
 
