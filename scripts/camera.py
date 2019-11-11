@@ -1,32 +1,44 @@
+#! /usr/bin/python
+# rospy for the subscriber
+import rospy
+# ROS Image message
+from sensor_msgs.msg import Image
+# ROS Image message -> OpenCV2 image converter
+from cv_bridge import CvBridge, CvBridgeError
+# OpenCV2 for saving an image
+import cv2
+import time
+# Instantiate CvBridge
+bridge = CvBridge()
 
-# import rospy
-# # ROS Image message
-# from sensor_msgs.msg import Image
-# # ROS Image message -> OpenCV2 image converter
-# from cv_bridge import CvBridge, CvBridgeError
-# # OpenCV2 for saving an image
-# import cv2
-# import matplotlib.pyplot as plt
+start_time = int(time.time())
 
-# # Instantiate CvBridge
-# # bridge = CvBridge()
+def image_callback(msg):
+    print('Received an image!')
+    try:
+        # Convert your ROS Image message to OpenCV2
+        cv2_img = bridge.imgmsg_to_cv2(msg, "bgr8")
+    except CvBridgeError, e:
+        print(e)
+    else:
+        # Save your OpenCV2 image as a png
+        #time = str(msg.header.stamp)
 
-# def image_callback(msg):
-#     # rospy.loginfo(msg.data)
-#     plt.imread(msg.data)
-#     plt.show()
-#     plt.pause(10)
- 
-# def main():
-#     rospy.init_node('image_listener')
-#     # Define your image topic
-#     image_topic = "/spot/camera1/image_raw"
-#     # Set up your subscriber and define its callback
-#     rospy.Subscriber(image_topic, Image, image_callback)
-#     # Spin until ctrl + c
-#     rospy.spin()
+        t = str(int(time.time()) - start_time + 1)
+        print(t)
 
-# if __name__ == '__main__':
-#     main()
+    
+        cv2.imwrite("/home/catkin_ws/src/spotmini/media/image"+t+".png", cv2_img)
 
-print(4)
+def main():
+    rospy.init_node('image_listener')
+    # Define your image topic
+    image_topic = "/spot/camera1/image_raw"
+    # Set up your subscriber and define its callback
+    rospy.Subscriber(image_topic, Image, image_callback)
+    # Spin until ctrl + c
+    rospy.spin()
+
+
+if __name__ == '__main__':
+    main()
