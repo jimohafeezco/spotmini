@@ -1,7 +1,7 @@
 # Spot
 Repository for my Spot Mini projects.
 
-##Installation
+##  Launching in RVIZ
 
 To make spotmini-ros part of your workspace, follow these steps (assuming your workspace is setup following the standard conventions):
 ```
@@ -13,6 +13,19 @@ roslaunch spotmini display.launch
 
 ```
 
+
+## Launching in Gazebo
+
+First be in the catkin workspace root, 
+
+```
+i)    catkin_make
+ii)   source devel/setup.bash
+iii)  roslaunch spotmini display_gazebo.launch 
+
+```
+
+
 The robot designed has 2DOF of revolute joints on each legs making a total of 8DOF. It also has a prismatic joint on top of its base link with 3DOF in addition to the primatic joint. It can use these sets of links to pick and drop objects and achieve different tasks.
 
 After running the commands above, you can play with the the joint states variables and see the differnt joints moving.
@@ -22,8 +35,6 @@ After running the commands above, you can play with the the joint states variabl
 
 ## Pictorial View of Robot in RVIZ
 ![alt text](/media/image.png)
-
-
 
 
 ## Controller for Robot
