@@ -1,8 +1,7 @@
 # Spot
 Repository for my Spot Mini projects.
 
-##Installation
-
+## Launching in RVIZ
 To make spotmini-ros part of your workspace, follow these steps (assuming your workspace is setup following the standard conventions):
 ```
 cd ~/catkin_ws/src
@@ -10,6 +9,17 @@ git clone hhttps://github.com/jimohafeezco/spotmini.git
 cd ~/catkin_ws
 catkin_make
 roslaunch spotmini display.launch 
+
+```
+
+## Launching in Gazebo
+
+First be in the catkin workspace root, 
+
+```
+i)    catkin_make
+ii)   source devel/setup.bash
+iii)  roslaunch spotmini display_gazebo.launch 
 
 ```
 
