@@ -64,6 +64,20 @@ Forward Kinematics was implemneted for 6 joints robotic system as a model in FKi
 
 In FKtest.py, some teste cases were tested using the function from FKine and their actual expected values compared with the solution using numpy asserts.
 Several test cases can be added to implement thus unit test.
+To test this unit test implementation, simply clone thr repository and navigate to script directory where we have the forward kinematics implementation and its unit test. Thereafter from the terminal, run the script using
+
+
+```python FKtest.py```
 
 
 ### Integration Test
+
+
+The integration tests is a continuation of the joint movement/control task.
+Firstly, from previous task, some joints poitions are published to robot joints. In other to get the actual joint position, an IMU sensor was added to the urdf file as a Gazebo plugin. Thereafter a subscriber was implemneted to determine if actual movement takes place which is determined by reading accelearation information from the robot joint. The integration test confirms if actual movement takes place when some joint positions are published. 
+
+
+TO test the functionality, first from the terminal we :
+1) ```roslaunch spotmini display_gazebo.launch```
+Open a new terminal and navigae to the script directory and run:
+2) ```python inTest.py```
