@@ -57,3 +57,13 @@ To get Camera Images,run:
 A python script, ```takePhoto.py``` was written as a subscriber node to save the image automatically and the publisher node included in the Gazebo model launch file.
 
 P.S: This work would continually be improved upon and the whole of the robot would move , detect obstacles and change direction of motion.
+
+### Unit Test
+
+Forward Kinematics was implemneted for 6 joints robotic system as a model in FKine.py.
+
+In FKtest.py, some teste cases were tested using the function from FKine and their actual expected values compared with the solution using numpy asserts.
+Several test cases can be added to implement thus unit test.
+
+
+### Integration Test
