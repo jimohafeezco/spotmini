@@ -5,10 +5,8 @@ python :
   -3.5
   -3.6
 
-before_install:
-  -pip before_install -U -pip
-  -python --version
-  -pip install -U pytest
+install:
+  -pip install unittest2
 
 script : 
 
