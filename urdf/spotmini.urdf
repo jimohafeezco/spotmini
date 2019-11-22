@@ -633,6 +633,7 @@
 
 
         <gazebo reference="imu_sensor_link">
+            <material>Gazebo/Yellow</material>
             <gravity>true</gravity>
             <sensor name="imu_sensor" type="imu">
                 <always_on>true</always_on>
