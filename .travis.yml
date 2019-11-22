@@ -13,5 +13,4 @@ before_install:
 script : 
 
   -scripts/FKtest
-  -scripts/inTest
 
