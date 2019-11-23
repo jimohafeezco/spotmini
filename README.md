@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=master)](https://travis-ci.org/jimohafeezco/spotmini)
 
 # Spot
+
+[![Build Status](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=master)](https://travis-ci.org/jimohafeezco/spotmini)
+
 Repository for my Spot Mini projects.
 
 ##  Launching in RVIZ
