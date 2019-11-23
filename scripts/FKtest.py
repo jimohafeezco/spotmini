@@ -7,7 +7,7 @@ Created on Fri Nov 15 00:42:42 2019
 """
 from FKine import *
 import numpy as np
-import unittest
+import unittest2
 
 FK1 =matrix([[ 0.7623116 , -0.44800391,  0.46709048,  9.8882595 ],
         [ 0.64475073,  0.46281563, -0.60835696, -2.01564422],
@@ -48,7 +48,7 @@ test2 = FK(q, tests[2], 0,6)
 test3 = FK(q, tests[3], 0, 6)
 test4 = FK(q, tests[4], 0, 6)
 
-class testMat(unittest.TestCase):
+class testMat(unittest2.TestCase):
  
     
     def testFK(self):
@@ -69,7 +69,7 @@ class testMat(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest2.main()
     
     
     
