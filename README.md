@@ -3,7 +3,8 @@
 [![Build Status](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=travis_ci)](https://travis-ci.org/jimohafeezco/spotmini)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=travis_ci)
 [![Inline docs](http://inch-ci.org/github/jimohafeezco/spotmini.svg?branch=travis_ci)]()
-[![license](https://img.shields.io/github/license/jimohafeezco/spotmini.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
+[![license](https://img.shields.io/github/license/jimohafeezco/spotmini.svg?maxAge=2592000)(https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # Spot
 
 Repository for my Spot Mini projects.
