@@ -1,13 +1,13 @@
 
 language: python
 python:
-  - "3.6"
+  - "3.7"
 cache: pip
 before_install:
   - python --version
   - pip install -U pip
   - pip install -U pytest
   - pip install codecov
-  - pip install unittest 
+  - pip install unittest2 
 script:
  - python unit_tests.py
