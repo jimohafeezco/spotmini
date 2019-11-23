@@ -1,7 +1,7 @@
 
-# Spot
 
-[![Build Status](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=master)](https://travis-ci.org/jimohafeezco/spotmini)
+[![Build Status](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=travis_ci)](https://travis-ci.org/jimohafeezco/spotmini)
+# Spot
 
 Repository for my Spot Mini projects.
 
