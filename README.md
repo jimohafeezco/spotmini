@@ -2,8 +2,9 @@
 
 [![Build Status](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=travis_ci)](https://travis-ci.org/jimohafeezco/spotmini)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=travis_ci)
-[![Inline docs](http://inch-ci.org/github/jimohafeezco/spotmini.svg?branch=travis_ci)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![License: MIT](https://img.shields.io/badge/Person%20of%20the%20Year-hafeez-hotpink.svg)
+
 # Spot
 
 Repository for my Spot Mini projects.
