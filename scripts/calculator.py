@@ -3,7 +3,7 @@ class cal():
         self.a=a
         self.b=b
     def add(self):
-        return self.a-self.b
+        return self.a+self.b
     def mul(self):
         return self.a*self.b
     def div(self):
