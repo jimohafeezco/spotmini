@@ -11,3 +11,4 @@ before_install:
   - pip install unittest2
 script:
  - python scripts/unit_tests.py
+ - python scripts/FKtest.py
