@@ -2,5 +2,12 @@
 language: python
 python:
   - "3.6"
+cache: pip
+before_install:
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+  - pip install codecov
+  - pip install unittest 
 script:
  - python unit_tests.py
