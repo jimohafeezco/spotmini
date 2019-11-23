@@ -9,6 +9,7 @@ before_install:
   - pip install -U pytest
   - pip install codecov
   - pip install unittest2
+  - pip install numpy
 script:
  - python scripts/unit_tests.py
  - python scripts/FKtest.py
