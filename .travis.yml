@@ -10,7 +10,7 @@ before_install:
   - pip install -U pytest
   - pip install codecov
 install:
-  -pip install unittest2
+  -pip install unittest
 
 script : 
 
