@@ -1,6 +1,9 @@
 
 
 [![Build Status](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=travis_ci)](https://travis-ci.org/jimohafeezco/spotmini)
+
+## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://travis-ci.org/jimohafeezco/spotmini.svg?branch=travis_ci)](https://travis-ci.org/jimohafeezco/spotmini)
+
 # Spot
 
 Repository for my Spot Mini projects.
