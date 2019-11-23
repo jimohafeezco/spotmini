@@ -8,6 +8,6 @@ before_install:
   - pip install -U pip
   - pip install -U pytest
   - pip install codecov
-  - pip install unittest
+  - pip install unittest2
 script:
  - python scripts/unit_tests.py
