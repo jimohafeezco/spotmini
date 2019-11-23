@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import unittest
+import unittest2
 from calculator import cal, add
 
-class TestCalculator(unittest.TestCase):
+class TestCalculator(unittest2.TestCase):
     '''Testing the calculator'''
 
     def setUp(self):
@@ -23,7 +23,7 @@ class TestCalculator(unittest.TestCase):
         calculator = cal(self.a, self.b)
         self.assertEqual(calculator.sub(), 435)
 
-class TestAdd(unittest.TestCase):
+class TestAdd(unittest2.TestCase):
     def test_add_function(self):
         self.assertEqual(add([1,2,3]), 6)
 
@@ -35,4 +35,4 @@ class TestAdd(unittest.TestCase):
     '''
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest2.main(verbosity=2)
