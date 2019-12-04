@@ -13,6 +13,7 @@ bridge = CvBridge()
 
 start_time = int(time.time())
 
+
 def image_callback(msg):
     print('Received an image!')
     try:
@@ -28,7 +29,22 @@ def image_callback(msg):
         print(t)
 
     
-        cv2.imwrite("/home/catkin_ws/src/spotmini/media/image"+t+".png", cv2_img)
+        cv2.imwrite("~/Pictures/img"+t+".png", cv2_img)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def main():
     rospy.init_node('image_listener')
