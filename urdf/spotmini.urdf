@@ -421,22 +421,22 @@
     
         <joint name="imu_sensor_joint" type="fixed">
             <axis xyz="0 0 1"/>
-            <origin xyz="0 0.0085 0.09" rpy="0 0 0"/>
+            <origin xyz="0.0 -0.008 0.095" rpy="0 0 0"/>
             <parent link="body4_link"/>
-            <child link="imu_sensor_link"/>
+            <child link="camera_link"/>
         </joint>
 
-        <link name="imu_sensor_link">
+        <link name="camera_link">
             <collision>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <geometry>
-                    <box size="0.005 0.005 0.005"/>
+                    <box size="0.01 0.01 0.01"/>
                 </geometry>
             </collision>
             <visual>
                 <origin xyz="0 0 0" rpy="0 0 0"/>
                 <geometry>
-                    <box size="0.005 0.005 0.005"/>
+                    <box size="0.01 0.01 0.01"/>
                 </geometry>
                 <material name="blue"/>
             </visual>
@@ -591,7 +591,8 @@
 </gazebo>
 
   <!-- camera -->
-  <gazebo reference="body1_link">
+  <gazebo reference="camera_link">
+    <material>Gazebo/Yellow</material>
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
@@ -620,7 +621,7 @@
         <cameraName>spot/camera1</cameraName>
         <imageTopicName>image_raw</imageTopicName>
         <cameraInfoTopicName>camera_info</cameraInfoTopicName>
-        <frameName>body1_link</frameName>
+        <frameName>camera_link</frameName>
         <hackBaseline>0.07</hackBaseline>
         <distortionK1>0.0</distortionK1>
         <distortionK2>0.0</distortionK2>
@@ -632,8 +633,12 @@
   </gazebo>
 
 
+<<<<<<< HEAD
         <gazebo reference="imu_sensor_link">
             <material>Gazebo/Yellow</material>
+=======
+        <gazebo reference="body1_link">
+>>>>>>> camera
             <gravity>true</gravity>
             <sensor name="imu_sensor" type="imu">
                 <always_on>true</always_on>
@@ -647,7 +652,7 @@
                     <gaussianNoise>0.0</gaussianNoise>
                     <xyzOffset>0 0 0</xyzOffset>
                     <rpyOffset>0 0 0</rpyOffset>
-                    <frameName>imu_sensor_link</frameName>
+                    <frameName>body1_link</frameName>
                 </plugin>
                 <pose>0 0 0 0 0 0</pose>
             </sensor>
