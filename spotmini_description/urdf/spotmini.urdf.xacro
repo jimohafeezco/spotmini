@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot name="quadruped_leg"  xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find spotmini)/urdf/links_joints.xacro"/>
+  <xacro:include filename="$(find spotmini_description)/urdf/links_joints.xacro"/>
 
   <material name="red">
     <color rgba="1.0 0.0 0.0 1.0"/>

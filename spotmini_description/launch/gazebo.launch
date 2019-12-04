@@ -3,16 +3,16 @@
 
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
 	</include>
-	<rosparam command="load" file="$(find spotmini)/controllers/gazebo_spot_control.yaml"/>
+	<rosparam command="load" file="$(find spotmini_gazebo)/controllers/gazebo_spot_control.yaml"/>
 
-	  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find spotmini)/urdf/spotmini.urdf.xacro'" />
+	  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find spotmini_description)/urdf/spotmini.urdf.xacro'" />
 	<node name="spawn_robot" pkg="gazebo_ros" type="spawn_model"
 		args="-urdf -model spotmini -param robot_description -z 0.5">
 	</node>
-	    
+	<node name="control_spot" pkg="spotmini_control" type="control_spot.py" />	    
 	<!-- <node name="image_listener" pkg="spotmini" type="takePhoto.py" /> -->
 
-	<rosparam command = "load" file= "$(find spotmini)/controllers/gazebo_spot_control.yaml"/>
+	<rosparam command = "load" file= "$(find spotmini_gazebo)/controllers/gazebo_spot_control.yaml"/>
 	
 	  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
    	   output="screen" ns="/spot" args="joint1_position_controller joint2_position_controller 
