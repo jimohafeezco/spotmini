@@ -8,15 +8,7 @@ import matplotlib.pyplot as plt
 # counter =0
 def callback(data):
     # global counter
-    # if counter % 10 ==0:
-        # time_stamp =[]
-        # acc =[]
-        # stamp = data.header.stamp
-        # time = stamp.secs + stamp.nsecs * 1e-9
-
-        # t = data.header.stamp.secs
-        # time_stamp.append(t)
-        # acc.append(data.linear_acceleration.x)
+  
     rospy.loginfo("I heard %s", data.linear_acceleration.x)
     rospy.loginfo("y is %s",  data.linear_acceleration.y)
     rospy.loginfo("z is %s",data.linear_acceleration.x)

@@ -15,7 +15,7 @@ def talker():
     rospy.init_node('control_spot')
 
     rate = rospy.Rate(10) # 10hz
-    i =1.5714
+    i =0
 
     while not rospy.is_shutdown():
         position = math.sin(i) #in radians not  degrees
@@ -25,7 +25,7 @@ def talker():
         pub2.publish(math.cos(i))
         pub3.publish(math.cos(i))
         pub4.publish(math.cos(i))
-        i+= 0.1
+        i+= 0
         rate.sleep()
 
 if __name__ == '__main__':
